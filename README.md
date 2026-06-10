@@ -1,10 +1,3 @@
-<!--
-  README de PERFIL de GitHub.
-  Cómo usarlo: crea un repositorio PÚBLICO con tu mismo nombre de usuario
-  (aseinotegi/aseinotegi) y guarda este contenido como README.md.
-  GitHub lo mostrará en la portada de tu perfil.
--->
-
 # Hola, soy Ander Sein 👋
 
 **Software Engineer** especializado en **plataformas de software para robótica e industria**
