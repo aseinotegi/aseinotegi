@@ -1,6 +1,6 @@
 # Hola, soy Ander Sein 👋
 
-**Software Engineer** especializado en **plataformas de software para robótica e industria**
+**Automation Engineer** especializado en ** Robótica autonoma movil en industria**
 (sector oil & gas). Diseño sistemas de extremo a extremo: backend, frontend, IA aplicada,
 infraestructura y despliegue.
 
