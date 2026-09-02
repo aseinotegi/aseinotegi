@@ -48,11 +48,20 @@ Ese recorrido me da algo poco común: entiendo el proceso, el PLC y la red OT **
 
 ---
 
-## 🚀 Proyectos destacados
+## 🏭 Casos de estudio en producción (anonimizados)
 
-### 🤖 [Robot Mission Scheduler & Monitoring Platform](https://github.com/aseinotegi/robot-mission-scheduler-showcase)
-Plataforma **en producción** para planificar y monitorizar misiones de robots de inspección autónoma en instalaciones oil & gas. Multi-planta, multi-robot, tiempo real, KPIs/OEE, informes PDF con lectura de manómetros por IA de visión, clasificación de obstáculos con fallback automático, scheduler con leader election, backups a S3, CI/CD y observabilidad end-to-end.
-`Python` `FastAPI` `React` `PostgreSQL` `Redis` `Docker` `Gemini Vision`
+Sistemas reales que he diseñado y que están operando en plantas industriales. El código es confidencial, así que cada repositorio documenta el **problema, la arquitectura, las piezas, cómo se conjuntan y cómo trabajo con cada tecnología**.
+
+| Caso | Qué resuelve | Tecnologías clave |
+|---|---|---|
+| 🤖 [**Robot Mission Scheduler & Monitoring**](https://github.com/aseinotegi/robot-mission-scheduler-showcase) | Planificar y monitorizar misiones de flotas de robots de inspección: tiempo real, KPIs/OEE, informes PDF con IA, obstáculos por visión, multi-planta | FastAPI · React · PostgreSQL · Redis · Docker · Gemini Vision · CI/CD |
+| 👁️ [**Level Gauge Vision**](https://github.com/aseinotegi/level-gauge-vision-showcase) | Lectura automática de medidores de nivel en fotos de robots: detector **YOLO11 entrenado a medida** + LLM multimodal solo sobre el recorte | YOLO11 · Gemini · FastAPI · Celery · Redis · Docker |
+| 🛡️ [**Robot Fleet Watchdogs**](https://github.com/aseinotegi/robot-fleet-watchdogs-showcase) | Microservicios que reanudan misiones pausadas, vigilan presión ATEX y batería 24/7 sin operador | Python · GraphQL · SQLite · SMTP · Docker |
+| 📡 [**MQTT Traceability Dashboard**](https://github.com/aseinotegi/mqtt-traceability-dashboard-showcase) | Trazabilidad en vivo de una celda de fabricación: PLCs → MQTT → FastAPI → WebSocket con JWT | MQTT · FastAPI · WebSocket · JWT |
+
+---
+
+## 🧪 Código abierto
 
 ### 📡 Adquisición de datos de PLC Siemens → broker
 Dos implementaciones del mismo patrón IIoT — leer un DB del PLC, detectar cambios y publicar solo lo que cambia — en los dos lenguajes que uso en el edge:
@@ -64,7 +73,7 @@ Servicio público en vivo que integra tres fuentes oficiales de la DGT, persiste
 `TypeScript` `PostgreSQL/PostGIS` `Docker` `Leaflet`
 
 ### 👁️ [Detector de somnolencia](https://github.com/aseinotegi/DetectorSomnolencia)
-Visión artificial en tiempo real sobre cámara: landmarks faciales, detección de parpadeo, bostezo y ojos cerrados con alerta. Base del mismo tipo de pipeline que aplico a detección de objetos con YOLO en entornos industriales.
+Visión artificial en tiempo real sobre cámara: landmarks faciales, detección de parpadeo, bostezo y ojos cerrados con alerta.
 `Python` `OpenCV` `dlib`
 
 ### 🧰 [MyTools](https://github.com/aseinotegi/MyTools)
