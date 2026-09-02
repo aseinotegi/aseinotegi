@@ -90,15 +90,6 @@ Caja de herramientas Python que uso en proyectos reales: cliente **OPC UA**, ser
 
 ---
 
-## 📊 GitHub
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=aseinotegi&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" alt="stats" height="165">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aseinotegi&layout=compact&theme=tokyonight&hide_border=true" alt="langs" height="165">
-</p>
-
----
-
 ## 📬 ¿Hablamos?
 
 ¿Tienes un parque de PLCs que quieres conectar, una planta que necesita datos en tiempo real, un caso de visión artificial en línea de producción o una flota de robots que operar? Escríbeme.
