@@ -66,6 +66,10 @@ Sistemas reales que he diseñado y que están operando en plantas industriales. 
 
 ## 🧪 Código abierto
 
+### 🧭 [Unified Namespace de una planta](https://github.com/aseinotegi/industrial-uns-demo)
+La historia de [andersein.com](https://andersein.com) funcionando con un solo `docker compose up`: un robot fotografía un manómetro, la visión y el PLC publican en el mismo **UNS**, una regla en YAML cruza las dos fuentes, el robot cierra la válvula manual y todo queda en **TimescaleDB + Grafana**. Reutiliza `plc-mqtt-gateway` para el PLC. Tests en Python 3.10–3.13 y CI que levanta el stack entero y comprueba la cadena de punta a punta.
+`MQTT` `Unified Namespace` `Siemens S7` `Python` `TimescaleDB` `Grafana` `Docker`
+
 ### 📡 Adquisición de datos de PLC Siemens → broker
 Dos implementaciones del mismo patrón IIoT — leer un DB del PLC, detectar cambios y publicar solo lo que cambia — en los dos lenguajes que uso en el edge:
 - [**plc-mqtt-gateway**](https://github.com/aseinotegi/plc-mqtt-gateway) — **Pasarela PLC S7 → MQTT** en Python: tags por dirección S7 en YAML, lectura agrupada por DB, publicación por cambio con banda muerta, reconexión automática, PLC simulado, `docker compose up` para probarla sin hardware, tests y CI.
