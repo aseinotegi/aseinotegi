@@ -68,7 +68,7 @@ Sistemas reales que he diseñado y que están operando en plantas industriales. 
 
 ### 📡 Adquisición de datos de PLC Siemens → broker
 Dos implementaciones del mismo patrón IIoT — leer un DB del PLC, detectar cambios y publicar solo lo que cambia — en los dos lenguajes que uso en el edge:
-- [**snap7_PLC_adquisition**](https://github.com/aseinotegi/snap7_PLC_adquisition) — **Pasarela PLC S7 → MQTT** en Python: tags por dirección S7 en YAML, lectura agrupada por DB, publicación por cambio con banda muerta, reconexión automática, PLC simulado, `docker compose up` para probarla sin hardware, tests y CI.
+- [**plc-mqtt-gateway**](https://github.com/aseinotegi/plc-mqtt-gateway) — **Pasarela PLC S7 → MQTT** en Python: tags por dirección S7 en YAML, lectura agrupada por DB, publicación por cambio con banda muerta, reconexión automática, PLC simulado, `docker compose up` para probarla sin hardware, tests y CI.
 - [**nodes7_js**](https://github.com/aseinotegi/nodes7_js) — Node.js + nodes7 → **MQTT**, con web service Express para configurar el PLC (IP, rack/slot, DB, variables) desde el navegador. Ciclo de lectura de 30 ms.
 
 ### 🗺️ [Mapa de Balizas V16 — España](https://github.com/aseinotegi/DGT) · [mapabalizasv16.info](https://mapabalizasv16.info)
