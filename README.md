@@ -59,7 +59,7 @@ Sistemas reales que he diseñado y que están operando en plantas industriales. 
 |---|---|---|
 | 🤖 [**Robot Mission Scheduler & Monitoring**](https://github.com/aseinotegi/robot-mission-scheduler-showcase) | Planificar y monitorizar misiones de flotas de robots de inspección: tiempo real, KPIs/OEE, informes PDF con IA, obstáculos por visión, multi-planta | FastAPI · React · PostgreSQL · Redis · Docker · Gemini Vision · CI/CD |
 | 👁️ [**Level Gauge Vision**](https://github.com/aseinotegi/level-gauge-vision-showcase) | Lectura automática de medidores de nivel en fotos de robots: detector **YOLO11 entrenado a medida** + LLM multimodal solo sobre el recorte | YOLO11 · Gemini · FastAPI · Celery · Redis · Docker |
-| 🛡️ [**Robot Fleet Watchdogs**](https://github.com/aseinotegi/robot-fleet-watchdogs-showcase) | Microservicios que reanudan misiones pausadas, vigilan presión ATEX y batería 24/7 sin operador | Python · GraphQL · SQLite · SMTP · Docker |
+| 🛡️ [**Robot Fleet Watchdogs**](https://github.com/aseinotegi/robot-fleet-watchdogs-showcase) | Microservicios que reanudan misiones pausadas, vigilan presión ATEX y batería 24/7 sin operador | Python · GraphQL · SQLite · SMTP · Docker · **código abierto + demo** |
 | 📡 [**MQTT Traceability Dashboard**](https://github.com/aseinotegi/mqtt-traceability-dashboard-showcase) | Trazabilidad en vivo de una celda de fabricación: PLCs → MQTT → FastAPI → WebSocket con JWT | MQTT · FastAPI · WebSocket · JWT |
 
 ---
