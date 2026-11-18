@@ -70,6 +70,10 @@ Sistemas reales que he diseñado y que están operando en plantas industriales. 
 La historia de [andersein.com](https://andersein.com) funcionando con un solo `docker compose up`: un robot fotografía un manómetro, la visión y el PLC publican en el mismo **UNS**, una regla en YAML cruza las dos fuentes, el robot cierra la válvula manual y todo queda en **TimescaleDB + Grafana**. Reutiliza `plc-mqtt-gateway` para el PLC. Tests en Python 3.10–3.13 y CI que levanta el stack entero y comprueba la cadena de punta a punta.
 `MQTT` `Unified Namespace` `Siemens S7` `Python` `TimescaleDB` `Grafana` `Docker`
 
+### 🔎 [POI Vision Inspector](https://github.com/aseinotegi/poi-vision-inspector)
+Inspección visual para robots **configurada por punto de interés, sin entrenar**: cada POI dice qué hay (manómetro, extintor…), qué rango debe marcar y a qué ruta del UNS va el resultado. Un modelo multimodal **local (Ollama) o en la nube (Gemini)** responde en JSON con esquema, y el inspector decide cuánto fiarse con comprobaciones propias (rango, unidad, saltos), con traza de modelo y prompt en cada lectura. Añadir extintores fue un bloque de YAML.
+`Python` `Ollama` `Gemini` `Pydantic` `MQTT` `Docker`
+
 ### 📡 Adquisición de datos de PLC Siemens → broker
 Dos implementaciones del mismo patrón IIoT — leer un DB del PLC, detectar cambios y publicar solo lo que cambia — en los dos lenguajes que uso en el edge:
 - [**plc-mqtt-gateway**](https://github.com/aseinotegi/plc-mqtt-gateway) — **Pasarela PLC S7 → MQTT** en Python: tags por dirección S7 en YAML, lectura agrupada por DB, publicación por cambio con banda muerta, reconexión automática, PLC simulado, `docker compose up` para probarla sin hardware, tests y CI.
